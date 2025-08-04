@@ -52,7 +52,11 @@ Think about the following,  modify the code to experiment it and put your though
 - What would be the benefit of running many instances?
 
 ```
-  Your thought here...
+- We can run `MockWebServer` on a different port by creating a new instance with a different port number, for example: `new MockWebServer(9000)`
+- To run more than 2 instances, we can create and start additional threads, each with a unique port number
+- We can change the HTML content by modifying the response string in the server code, such as adding a table, more text, or images using standard HTML tags
+- The benefit of running many instances includes the ability to test multiple services or endpoints at the same time, simulate multiple servers, or handle different types of requests on different ports for better organization and scalability
+
 ```
 **Please push the code back to Github to submit this lab**
 After you push, ensure you have green checkmark on the repository.
